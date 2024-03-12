@@ -16,5 +16,12 @@ namespace GitHub_WFA_Test2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int currentYear = int.Parse(textBox1.Text);
+            int birthYear = int.Parse(textBox2.Text);
+            MessageBox.Show($"Ваш возраст: {currentYear - birthYear}");
+        }
     }
 }
